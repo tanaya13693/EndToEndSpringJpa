@@ -48,13 +48,13 @@ public class StudentdalApplicationTests {
 		
 	}
 	
-//	@Test
-//	public void deleteStudent(){
-//		
-//		Student student = new Student();
-//		student.setId(1);
-//		studentRepository.delete(student);
-//		
-//	}
+	@Test
+	public void deleteStudent(){
+		
+		Student student = new Student();
+		student.setId(1);
+		studentRepository.delete(student);
+		
+	}
 
 }

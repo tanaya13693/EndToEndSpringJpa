@@ -1,0 +1,11 @@
+package com.tanaya.location.service;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class LocationServiceImpl {
+	
+	private LocationRepository repository;
+	
+
+}

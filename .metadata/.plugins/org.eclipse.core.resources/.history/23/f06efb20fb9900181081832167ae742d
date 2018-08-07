@@ -1,0 +1,5 @@
+package com.tanaya.location.service;
+
+public interface LocationService {
+
+}

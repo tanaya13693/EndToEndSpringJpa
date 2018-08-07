@@ -1,0 +1,12 @@
+package com.tanaya.location.entities;
+
+public class Location {
+	
+	private int id;
+	private String code;
+	private String name;
+	private String type;
+	
+	
+
+}

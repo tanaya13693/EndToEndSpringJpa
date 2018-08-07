@@ -1,0 +1,37 @@
+package com.tanaya.location.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.tanaya.location.entities.Location;
+import com.tanaya.location.repos.LocationRepository;
+
+@Service
+public class LocationServiceImpl {
+	
+	@Autowired
+	private LocationRepository repository;
+
+	public LocationRepository getRepository() {
+		return repository;
+	}
+
+	public void setRepository(LocationRepository repository) {
+		this.repository = repository;
+	}
+	
+	@Override
+	public Location saveLocation(Location location);
+
+	Location updateLocation(Location location);
+
+	void deleteLocation(Location location);
+
+	Location getLocationById(int id);
+
+	List<Location> getAllLocations();
+	
+	
+}

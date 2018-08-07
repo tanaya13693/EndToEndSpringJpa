@@ -1,0 +1,10 @@
+package com.tanaya.location.controllers;
+
+@Controller
+public class LocationController {
+
+	public String showCreate(){
+		return "createLocation";
+		
+	}
+}
