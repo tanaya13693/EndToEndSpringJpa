@@ -10,5 +10,3 @@ public class StudentdalApplication {
 		SpringApplication.run(StudentdalApplication.class, args);
 	}
 }
-
-//Data access layer
