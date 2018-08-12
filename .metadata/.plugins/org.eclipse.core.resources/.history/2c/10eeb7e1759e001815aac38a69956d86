@@ -1,0 +1,12 @@
+package com.tanaya.location.util;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.stereotype.Component;
+
+@Component
+public interface EmailUtil {
+	
+	void sendEmail(String toAddress, String subject, String body);
+	
+}

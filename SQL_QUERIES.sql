@@ -8,4 +8,8 @@ create table studenttab(
 
 select * from studenttab;
 
+select * from location;
 
+
+delete from location;
+commit;

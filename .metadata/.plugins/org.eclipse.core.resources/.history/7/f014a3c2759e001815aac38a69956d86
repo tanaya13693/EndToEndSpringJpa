@@ -1,0 +1,12 @@
+package com.tanaya.location.util;
+
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+
+public interface EmailUtil {
+
+	@Autowired
+	private JavaMailSenderImpl sender;
+	
+	void sendEmail(String toAddress, String subject, String body);
+	
+}

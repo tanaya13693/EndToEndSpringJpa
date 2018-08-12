@@ -1,0 +1,8 @@
+package com.tanaya.location.util;
+
+public interface EmailUtil {
+
+	JavaMailSenderImpl
+	void sendEmail(String toAddress, String subject, String body);
+	
+}

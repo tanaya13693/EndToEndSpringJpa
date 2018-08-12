@@ -1,0 +1,10 @@
+package com.tanaya.location.util;
+
+public class EmailUtilImpl implements EmailUtil {
+
+	@Override
+	public void sendEmail(){
+		
+		
+	}
+}

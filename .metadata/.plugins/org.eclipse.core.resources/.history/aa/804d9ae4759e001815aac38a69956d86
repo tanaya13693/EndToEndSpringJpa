@@ -1,0 +1,17 @@
+package com.tanaya.location.util;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
+
+public class EmailUtilImpl implements EmailUtil {
+	
+
+	@Autowired
+	private JavaMailSenderImpl sender;
+
+	@Override
+	public void sendEmail(String toAddress, String subject, String body){
+		
+		
+	}
+}

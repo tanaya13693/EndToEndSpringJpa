@@ -1,0 +1,5 @@
+package com.tanaya.location.util;
+
+public interface EmailUtil {
+
+}
