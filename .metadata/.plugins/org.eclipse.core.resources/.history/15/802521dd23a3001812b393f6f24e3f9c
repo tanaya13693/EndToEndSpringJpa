@@ -1,0 +1,6 @@
+package com.tanaya.location.controllers;
+
+@RestController
+public class LocationRestController {
+
+}

@@ -1,0 +1,15 @@
+package com.tanaya.location.controllers;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/locations")
+public class LocationRestController {
+	
+	public List<Location> getLocations(){
+		
+		return null;
+	}
+
+}
