@@ -1,5 +1,11 @@
 # EndToEndSpringJpa
 
+Technologies:
+1. Spring JPA
+2. RestFul
+3. JSP, HTML, CSS
+4. Angular
+
 Project: locationweb
 
 *Main Layers:
