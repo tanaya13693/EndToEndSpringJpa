@@ -1,0 +1,13 @@
+package com.tanaya.location.util;
+
+import java.util.List;
+
+public class ReportUtilImpl implements ReportUtil {
+
+	@Override
+	public void generatePiChart(String path, List<Object[]> data) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,11 @@
+
+†squid:S1192-"JDefine a constant instead of duplicating this literal "locations" 3 times.(¥»õúÿÿÿÿ8µæ÷ıÒ,HÅRCRITICALZ
+CODE_SMELL
+squid:S1192."QDefine a constant instead of duplicating this literal "displayLocations" 3 times.(£–™şÿÿÿÿ8ú¦ªşÒ,HİRCRITICALZ
+CODE_SMELL
+wsquid:S1854<"CRemove this useless assignment to local variable "locationUpdated".(úÇëª8È²öıÒ,HÓRMAJORZ
+CODE_SMELL
+hsquid:S1481<"4Remove this unused "locationUpdated" local variable.(úÇëª8È²öıÒ,HÔRMINORZ
+CODE_SMELL
+„squid:CommentedOutCodeLine%"<This block of commented-out lines of code should be removed.(ïÁÚîúÿÿÿÿ8àšåÓ,H¹RMAJORZ
+CODE_SMELL

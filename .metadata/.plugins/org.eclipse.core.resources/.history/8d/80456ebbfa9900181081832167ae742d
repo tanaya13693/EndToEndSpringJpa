@@ -1,7 +1,0 @@
-package com.tanaya.location.repos;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface LocationRepository extends CrudRepository<T, ID> {
-
-}

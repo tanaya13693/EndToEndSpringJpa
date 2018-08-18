@@ -2,6 +2,8 @@ package com.tanaya.location.controllers;
 
 import java.util.List;
 
+import javax.servlet.ServletContext;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -10,8 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.tanaya.location.entities.Location;
+import com.tanaya.location.repos.LocationRepository;
 import com.tanaya.location.service.LocationService;
 import com.tanaya.location.util.EmailUtil;
+import com.tanaya.location.util.ReportUtil;
 
 @Controller
 public class LocationController {
@@ -21,7 +25,15 @@ public class LocationController {
 	
 	@Autowired
 	EmailUtil emailUtil;
-
+	
+	@Autowired
+	LocationRepository repository;
+	
+	@Autowired
+	ReportUtil reportUtil;
+	
+	@Autowired
+	ServletContext sc;
 	
 	@RequestMapping("/showCreate")
 	public String showCreate(){
@@ -69,5 +81,15 @@ public class LocationController {
 		modelMap.addAttribute("location", location);
 		return "updateLocation";		
 	}
+	
+	@RequestMapping("/generateReport")
+	public String generateReport(){
+		
+		String path = sc.getRealPath("/");
+		List<Object[]> data = repository.findTypeAndTypeCount();
+		reportUtil.generatePieChart(path, data);
+		return "report";		
+	}
+	
 		
 }

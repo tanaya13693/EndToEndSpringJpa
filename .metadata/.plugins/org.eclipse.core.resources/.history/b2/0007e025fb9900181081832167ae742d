@@ -1,9 +1,0 @@
-package com.tanaya.location.service;
-
-import com.tanaya.location.entities.Location;
-
-public interface LocationService {
-
-	Location saveLocation(Location location);
-	
-}
