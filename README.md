@@ -24,4 +24,5 @@ Project: locationweb
 5. Utility class
   -to perform special operation across layers
   -In this example, i)sending email from the application. ii)Use JFree Chart Api in our application in utility class to generate reports.
-6. 
+6. Integration Layer:
+  -To perform REST CRUD calls
