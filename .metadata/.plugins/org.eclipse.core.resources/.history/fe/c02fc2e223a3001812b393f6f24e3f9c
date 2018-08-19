@@ -1,7 +1,0 @@
-package com.tanaya.location.controllers;
-
-@RestController
-@RequestMapping("/locations")
-public class LocationRestController {
-
-}
