@@ -1,0 +1,11 @@
+package com.tanaya.flightreservation;
+
+public class USER1 {
+	
+	private long id;
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+
+}

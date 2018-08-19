@@ -1,0 +1,13 @@
+package com.tanaya.flightreservation.controllers;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class UserController {
+	
+	public String showRegistration(){
+		
+		return "registerUser";
+	}
+
+}

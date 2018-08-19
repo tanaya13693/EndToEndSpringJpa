@@ -1,0 +1,5 @@
+package com.tanaya.flightreservation.repos;
+
+public interface UserRepository extends JpaRepository<User, Long>{
+
+}
