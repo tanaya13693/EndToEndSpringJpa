@@ -1,8 +1,0 @@
-package com.tanaya.location.util;
-
-public interface EmailUtil {
-	
-	voind sendEmail(String toAddress. String subject, String body);
-	
-
-}

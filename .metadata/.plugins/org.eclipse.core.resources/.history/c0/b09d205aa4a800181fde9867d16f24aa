@@ -1,0 +1,14 @@
+package com.tanaya.flightreservation.controllers;
+
+@Controller
+public class ReservationController {
+	
+	public String showCompleteReservation(){
+		
+		@RequestMapping("/showCompleteReservation")
+		showCompleteReservation?flightId=${flight.id}
+		
+		
+	}
+
+}

@@ -1,0 +1,84 @@
+package com.deloitte.internal.daapfit.persist.entity;
+
+/**
+ * 
+ * @author tvadgave
+ *
+ */
+
+import java.sql.Timestamp;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Company {
+
+	@Id
+	@Column(name="CMPNY_ID")
+	private int id;
+	
+	@Column(name="CMPNY_NM")
+	private String companyName;
+	
+	@Column(name="CMPNY_DSCRPTN")
+	private String companyDescription;
+	
+	@Column(name="CMPNY_LOC")
+	private String companyLocation;
+	
+	@Column(name="CMPNY_CNTCT")
+	private String companyContact;
+	
+	@Column(name="CREATED")
+	private Timestamp createdDate;
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(String companyName) {
+		this.companyName = companyName;
+	}
+
+	public String getCompanyDescription() {
+		return companyDescription;
+	}
+
+	public void setCompanyDescription(String companyDescription) {
+		this.companyDescription = companyDescription;
+	}
+
+	public String getCompanyLocation() {
+		return companyLocation;
+	}
+
+	public void setCompanyLocation(String companyLocation) {
+		this.companyLocation = companyLocation;
+	}
+
+	public String getCompanyContact() {
+		return companyContact;
+	}
+
+	public void setCompanyContact(String companyContact) {
+		this.companyContact = companyContact;
+	}
+
+	public Timestamp getCreatedDate() {
+		return createdDate;
+	}
+
+	public void setCreatedDate(Timestamp createdDate) {
+		this.createdDate = createdDate;
+	}
+
+}

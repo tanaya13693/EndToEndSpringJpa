@@ -12,6 +12,7 @@
 
 <pre>
 <h2> User Registration: </h2>
+Id: <input type="text" name="id" />
 First Name: <input type="text" name="firstName" />
 Last Name: <input type="text" name="lastName" />
 User Name: <input type="text" name="email" />

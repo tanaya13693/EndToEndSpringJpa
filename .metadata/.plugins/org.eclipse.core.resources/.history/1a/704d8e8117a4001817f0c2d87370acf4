@@ -1,0 +1,14 @@
+package com.tanaya.flightreservation.controllers;
+
+@Controller
+public class FlightController {
+
+		@Autowired
+		FlightRepository flightRepository;
+		
+		@RequestMapping("findFlights")
+		public String findFlights(@RequestParam("from")){
+			
+		}
+		
+}
