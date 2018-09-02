@@ -1,0 +1,5 @@
+package com.tanaya.flightreservation.dto;
+
+public class ReservationRequest {
+
+}

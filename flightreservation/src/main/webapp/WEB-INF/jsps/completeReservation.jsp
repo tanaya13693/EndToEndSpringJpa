@@ -14,10 +14,10 @@
 
 	<h2>Complete Reservation </h2>
 	Airline: ${flight.operatingAirlines} </br>
-	Airline: ${flight.departureCity}
-	Airline: ${flight.arrivalCity}
+	Departure City: ${flight.departureCity}
+	Arrival City: ${flight.arrivalCity}
 
-<form action="completeReservation" method="post"/>
+<form action="completeReservation" method="post">
 
 <pre>	
 	<h2> Passenger Details: </h2>
@@ -29,8 +29,8 @@
 	<h2>Card Details: </h2>
 	Name on the card:<input type="text" name="nameOnTheCard">
 	Card No:<input type="text" name="cardNumber">
-	Expiry Date:<input type="text" name="expirationDate">
-	Three Digit Sec Code:<input type="text" name="securityCode">
+	Expiration Date:<input type="text" name="expirationDate">
+	Three Digit Security Code:<input type="text" name="securityCode">
 	
 	<input type="hidden" name="flightId" value="${flight.id}"/>
 	<input type="submit" value="confirm"/>

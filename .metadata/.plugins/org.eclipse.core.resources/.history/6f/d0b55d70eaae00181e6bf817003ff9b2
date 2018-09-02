@@ -1,0 +1,17 @@
+package com.tanaya.flightreservation.services;
+
+import com.tanaya.flightreservation.dto.ReservationRequest;
+import com.tanaya.flightreservation.entities.Reservation;
+
+public class ReservationServiceImpl implements ReservationService{
+
+	@Autowired
+	FlightRepository 
+		@Override
+		public Reservation bookFlight(Reservation request) {
+			
+			//Make payment
+			
+			return null;
+		}
+}

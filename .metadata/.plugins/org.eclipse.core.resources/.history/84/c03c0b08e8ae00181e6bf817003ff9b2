@@ -1,0 +1,15 @@
+package com.tanaya.flightreservation.dto;
+
+public class ReservationRequest {
+	
+	private Long flightId;
+	private String
+	private String
+	private String
+	private String
+	private String
+	private String
+	private String
+	private String
+
+}

@@ -1,0 +1,32 @@
+package com.tanaya.flightreservation.services;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.tanaya.flightreservation.dto.ReservationRequest;
+import com.tanaya.flightreservation.entities.Reservation;
+import com.tanaya.flightreservation.repos.FlightRepository;
+import com.tanaya.flightreservation.repos.PassengerRepository;
+import com.tanaya.flightreservation.repos.ReservationRepository;
+
+public class ReservationServiceImpl implements ReservationService{
+
+	@Autowired
+	FlightRepository flightRepository;
+	
+	@Autowired
+	PassengerRepository passengerRepository;
+	
+	@Autowired
+	ReservationRepository reservationRepository;
+	
+	@Override
+	public Reservation bookFlight(ReservationRequest request) {
+			
+		//Make payment
+		Long flightId = request.getFlightId();
+		Flight flight = flightRepository.findOne(flightId)	
+		
+		return null;
+	}
+	
+}
