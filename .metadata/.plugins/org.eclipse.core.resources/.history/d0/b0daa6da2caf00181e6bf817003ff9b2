@@ -1,0 +1,14 @@
+package com.tanaya.flightreservation.controllers;
+
+@RestController
+public class ReservationRestController {
+
+	@Autowired
+	ReservationRepository reservationRepository;
+	
+	@RequestMapping("/reservations/{id}")
+	public Reservation findReservation(){
+		
+	}
+	
+}

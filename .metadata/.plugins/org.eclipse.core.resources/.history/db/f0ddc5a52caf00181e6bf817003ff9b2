@@ -1,0 +1,7 @@
+package com.tanaya.flightreservation.controllers;
+
+@RestController
+public class ReservationRestController {
+
+	ReservationRepository reservationRepository;
+}

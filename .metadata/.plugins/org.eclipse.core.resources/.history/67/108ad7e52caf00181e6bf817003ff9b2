@@ -1,0 +1,17 @@
+package com.tanaya.flightreservation.controllers;
+
+import com.tanaya.flightreservation.repos.ReservationRepository;
+
+@RestController
+public class ReservationRestController {
+
+	@Autowired
+	ReservationRepository reservationRepository;
+	
+	@RequestMapping("/reservations/{id}")
+	public Reservation findReservation(@PathVariable("id") Long id){
+		return reservationRepository.findById(id).get();
+		
+	}
+	
+}
