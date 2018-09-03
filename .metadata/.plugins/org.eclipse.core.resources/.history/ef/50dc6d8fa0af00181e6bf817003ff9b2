@@ -1,0 +1,25 @@
+package com.tanaya.flightcheckin.integration;
+
+import org.springframework.web.client.RestTemplate;
+
+import com.tanaya.flightcheckin.integration.dto.Reservation;
+import com.tanaya.flightcheckin.integration.dto.ReservationUpdateRequest;
+
+public class ReservationRestClientImpl implements ReservationRestClient {
+
+	public static final String RESERVATION_REST_URL = "http://localhost:8080/flightreservation/reservations/";
+	
+	@Override
+	public Reservation findReservation(Long id) {		
+		RestTemplate restTemplate = new RestTemplate();
+		Reservation reservation = restTemplate.getForObject("" + id, Reservation.class);
+		return reservation;
+	}
+
+	@Override
+	public Reservation updateReservation(ReservationUpdateRequest request) {
+		
+		return null;
+	}
+
+}

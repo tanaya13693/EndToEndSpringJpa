@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;startCheckIn.jsp&apos; to &apos;jsps&apos;" description="Move &apos;startCheckIn.jsp&apos; to &apos;jsps&apos;" destination="src/main/webapp/WEB-INF/jsps" element1="src/main/webapp/WEB-INF/startCheckIn.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1536001849877" updateReferences="true"/>
+</session>

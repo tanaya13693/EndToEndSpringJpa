@@ -1,0 +1,27 @@
+package com.tanaya.flightcheckin.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.tanaya.flightcheckin.integration.ReservationRestClient;
+import com.tanaya.flightcheckin.integration.dto.Reservation;
+
+@Controller
+public class CheckInController {
+	
+	@Autowired
+	ReservationRestClient restClient;
+	
+	@RequestMapping("/showStartCheckin")
+	public String showStartCheckIn(){		
+		return "startCheckIn";
+	}
+	
+	@RequestMapping("/startCheckIn")
+	public String startCheckIn(Long reservationId){
+		Reservation reservation = restClient.findReservation(reservationId);
+		return "displayReservationDetails";		
+	}
+
+}
