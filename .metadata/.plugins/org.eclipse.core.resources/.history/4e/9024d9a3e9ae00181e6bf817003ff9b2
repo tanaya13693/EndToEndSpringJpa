@@ -1,9 +1,0 @@
-package com.tanaya.flightreservation.services;
-
-import com.tanaya.flightreservation.entities.Reservation;
-
-public interface ReservationService {
-	
-	public Reservation bookFlight(Reservation request);
-
-}

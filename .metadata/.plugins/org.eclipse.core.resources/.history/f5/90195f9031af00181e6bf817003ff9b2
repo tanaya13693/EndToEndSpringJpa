@@ -1,5 +1,0 @@
-package com.tanaya.flightcheckin.integration;
-
-public interface ReservationRestClient {
-
-}

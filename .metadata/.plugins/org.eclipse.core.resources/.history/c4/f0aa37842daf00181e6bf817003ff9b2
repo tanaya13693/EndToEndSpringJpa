@@ -1,9 +1,0 @@
-package com.tanaya.flightreservation.dto;
-
-public class ReservationUpdateRequest {
-	
-	private long id;
-	private boolean checkedIn;
-	private int numberOfBags;
-
-}

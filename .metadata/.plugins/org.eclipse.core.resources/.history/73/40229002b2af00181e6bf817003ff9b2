@@ -1,6 +1,0 @@
-#Presentation layer properties
-spring.mvc.view.prefix=/WEB-INF/jsps/
-spring.mvc.view.suffix=.jsp
-server.servlet.context-path=/flightcheckin
-
-server.port=9090

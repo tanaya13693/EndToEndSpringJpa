@@ -1,8 +1,0 @@
-package com.tanaya.flightcheckin.integration;
-
-public interface ReservationRestClient {
-	
-	public Reservation findReservation(Long id);
-
-	
-}

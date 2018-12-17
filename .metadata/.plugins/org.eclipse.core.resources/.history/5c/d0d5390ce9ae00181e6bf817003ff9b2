@@ -1,9 +1,0 @@
-package com.tanaya.flightreservation.services;
-
-public interface ReservationService {
-	
-	public Reservation bookFlight(){
-		
-	}
-
-}
