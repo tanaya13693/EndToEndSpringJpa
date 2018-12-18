@@ -1,0 +1,8 @@
+package com.tanaya.flightreservation.util;
+
+@Component
+public class EmailUtil {
+	
+	@Autowired
+
+}

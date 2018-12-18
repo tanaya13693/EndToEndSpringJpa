@@ -9,6 +9,7 @@ public class Reservation extends AbstractEntity{
 	private Boolean checkedIn;
 	private int numberOfBags;
 	
+	
 	@OneToOne
 	private Passenger passenger;
 	

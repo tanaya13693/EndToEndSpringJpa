@@ -1,0 +1,27 @@
+package com.tanaya.flightreservation.util;
+
+@Component
+public class EmailUtil {
+	
+	@Autowired
+	private JavaMailSender sender;
+	
+	public void sendItinerary(String toAddress, String filePath){
+		
+		MimeMessage message = sender.createMimeMessage();
+		
+		try{
+			MimeMessageHelper messageHelper = new MimeMessageHelper(message, true);
+			messageHelper.setTo(toAddress);
+			messageHelper.setSubject("");
+			messageHelper.setText("");
+			messageHelper.addAttachment("",);
+			sender.send(message);
+		}catch(MessagingException e){
+			e.printStackTrace();
+		}
+	}
+	
+	
+
+}

@@ -1,6 +1,9 @@
 package com.tanaya.flightreservation.controllers;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -17,15 +20,21 @@ public class UserController {
 	@Autowired
 	UserRepository userRepository;
 	
+	@Autowired
+	private BCryptPasswordEncoder encoder;
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
+	
 	@RequestMapping("/showReg")
 	public String showRegistration(){
 		
 		return "login/registerUser";
 	}
 	
-	@RequestMapping(value="registerUser", method=RequestMethod.POST)
+	@RequestMapping(value="/registerUser", method=RequestMethod.POST)
 	public String register(@ModelAttribute("user") User user){
 		
+		user.setPassword(encoder.encode(user.getPassword()));
 		userRepository.save(user);
 		return "login/login";
 	}
@@ -37,6 +46,12 @@ public class UserController {
 	
 	@RequestMapping(value="login", method=RequestMethod.POST)
 	public String login(@RequestParam("email")	String email, @RequestParam("password") String password, ModelMap modelMap){
+		
+		LOGGER.error("ERROR");
+		LOGGER.warn("WARN");
+		LOGGER.info("INFO inside login...test only");
+		LOGGER.debug("DEBUG");
+		LOGGER.trace("TRACE");
 		
 		User user = userRepository.findByEmail(email);
 		if(user.getPassword().equals(password)){

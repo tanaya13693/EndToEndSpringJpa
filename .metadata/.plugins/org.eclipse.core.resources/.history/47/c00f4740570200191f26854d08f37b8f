@@ -1,0 +1,20 @@
+package com.tanaya.flightreservation.util;
+
+@Component
+public class PDFGenerator {
+
+	public void generateItinerary(Reservation reservation, String filePath){
+		
+		Document document = new Document();
+		
+		try{
+			PdfWriter.getInstance(document, new FileOutputStream(filePath));
+			document.open();
+			document.add(new PdfTable());
+			document.close();
+		}catch(FileNotFoundException | DocumentException e){
+			e.printStackTrace();
+			
+		}
+	}
+}

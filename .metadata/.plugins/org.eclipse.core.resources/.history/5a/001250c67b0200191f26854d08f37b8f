@@ -1,0 +1,61 @@
+package com.tanaya.flightreservation.util;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import org.springframework.stereotype.Component;
+
+import com.itextpdf.text.Document;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.pdf.PdfPTable;
+import com.itextpdf.text.pdf.PdfWriter;
+import com.tanaya.flightreservation.entities.Reservation;
+
+@Component
+public class PDFGenerator {
+
+	public void generateItinerary(Reservation reservation, String filePath){
+		
+		Document document = new Document();
+		
+		try{
+			PdfWriter.getInstance(document, new FileOutputStream(filePath));
+			document.open();
+			document.add(generateTable(reservation));
+			document.close();
+		}catch(FileNotFoundException | DocumentException e){
+			e.printStackTrace();
+			
+		}
+	}
+	
+	private PdfTable generateTable(Reservation reservation){
+		
+		PdfTable table = new PdfTable(2);
+		PdfPCell cell;
+		cell = new PdfPCell(new Phrase("Flight Itinerary"));
+		cell.setColspan(2);
+		table.addCell(cell);
+		
+		cell = new PdfPCell(new Phrase("Flight Details"));
+		cell.setColspan(2);
+		table.addCell(cell);
+		
+		table.addCell("Departure City");
+		table.addCell(reservation.getDepartureCity());
+		
+		table.addCell("Arrival City");
+		table.addCell(reservation.getArrivalCity());
+		
+		table.addCell("Flight Number");
+		table.addCell(reservation.getArrivalCity());
+		
+		table.addCell("Departure Date");
+		table.addCell(reservation.getArrivalCity());
+		
+		table.addCell("Departure Time");
+		table.addCell(reservation.getArrivalCity());
+		
+		return table;
+		
+	}
+}

@@ -1,0 +1,10 @@
+package com.tanaya.flightreservation.util;
+
+@Component
+public class PDFGenerator {
+
+	public void generateItinerary(Reservation reservation, String filePath){
+		
+		
+	}
+}
